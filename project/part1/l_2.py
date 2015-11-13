@@ -22,12 +22,13 @@ class FSM:
 
     def run(self):
         print("Start State is State 1")
-        print("-> 1 ",end="")
+        print("-> 1 ", end="")
         for c in self.str:
-            print("-> ", end="")
-            self.curState = self.states[self.curState](int(c))
-            print(self.curState, end="")
-            print(" ", end="")
+            if c != '\n':
+                print("-> ", end="")
+                self.curState = self.states[self.curState](int(c))
+                print(self.curState, end="")
+                print(" ", end="")
         print()
         self.accept()
 
@@ -129,6 +130,6 @@ class FSM:
     def thirteen(self, input):
         return self.curState
 
-fsm = FSM('testInput.txt')
+fsm = FSM('OctalEncoding.txt')
 
 fsm.run()
