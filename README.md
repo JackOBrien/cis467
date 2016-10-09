@@ -1,2 +1,2 @@
-# cis467
-Automata and theory of Computation
+# CIS 467
+Automata and Theory of Computation
