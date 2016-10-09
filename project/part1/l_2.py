@@ -1,4 +1,4 @@
-class FSM:
+class FSM: // Finite State Machine. NOT Flying spaghetti Monster
     def __init__(self, fileName):
         self.fileName = fileName
         self.curState = 1
